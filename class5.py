@@ -1,24 +1,39 @@
-from cgi import print_arguments
+class FirstClass:
+    p_d = 5
+    b = 8
+belal = FirstClass()
+student2 = FirstClass()
 
-'''
-class class5:
-    a=4
-    b=9
-bahar = class5()
-bahar1=class5()
+print(belal.b)
 
-print (bahar.a,bahar.b)
-print(bahar1.a)
-'''
-class cal:
-    def add(self,num1,num2):
-        return num1+num2
-    def sub(self,num1,num2):
-        return num1-num2
-    def mult(self, num1,num2):
-        return num1*num2
-    def div(self,num1,num2):
-        return num1/num2            
-bahar = cal()
-print(bahar.add(5,5),bahar.sub(10,5),bahar.mult(3,4),bahar.div(10,2))
+class EmpName:
+    f_name='Md.'
+    l_name='Hasanuzzaman'
 
+emp=EmpName()
+
+print(EmpName.f_name,EmpName.l_name)
+
+class MyCal:
+    def add(self,a,b):
+        return a+b
+
+    def sub(self,a,b):
+        return a-b
+
+    def multiplication(self,a,b):
+        return a*b
+
+    def division(self,a,b):
+        return a/b
+
+
+x=int(input("Enter a value for x : "))
+y=int(input("Enter a value for y : "))
+
+Calc1=MyCal()
+
+print (Calc1.add(x,y))
+print (Calc1.sub(x,y))
+print (Calc1.multiplication(x,y))
+print (Calc1.division(x,y))
